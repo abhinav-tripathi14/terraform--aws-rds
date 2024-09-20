@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 data "aws_availability_zones" "available" {}
-/*
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "2.77.0"
@@ -57,7 +57,7 @@ resource "aws_db_parameter_group" "education" {
     value = "1"
   }
 }
-*/
+
 provider "random" {}
 
 resource "random_pet" "random" {
